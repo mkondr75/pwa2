@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple PWA</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="/manifest.json">
+
+<body>
+  <div class="connector">
+    <button id="connect" type="button">Connect</button>
+    <button id="disconnect" type="button">Disconnect</button>
+    <form id="send-form">
+      <input id="input" type="text">
+      <button type="submit">Send</button>
+    </form>
+    <div id="terminal"></div>
+    <script src="main.js"></script>
+  </div>
+
+  <!-- <nav>
+    <h1>VM PWA</h1>
+    <h1>VM PWA4</h1>
+  </nav> -->
+  <header>
+    <h2>Изучаем PWA, manifest, Service Workers</h2>
+  </header>
+  <div class="container">
+    <div id="posts"></div>
+    <div class="container">
+    </div>
+    <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+
+    <script src="app.js"></script>
+    <script src="canvasjs.min.js"></script>
+</body>
+
+</html>

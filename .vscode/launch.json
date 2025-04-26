@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "name": "DEBUG-DEV",
+        //     "request": "launch",
+        //     "type": "pwa-chrome",
+        //     "url": "https://localhost:3000/",
+        //     "webRoot": "${workspaceRoot}",
+        //     "sourceMaps": true
+        // },
+        {
+            "name": "Attach to browser",
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222
+        },
+        {
+            "name": "Debug",
+            "type": "chrome",
+            "request": "launch",
+            "webRoot": "${workspaceRoot}",
+            "url": "http://localhost:3000",
+            // "userDataDir": "${workspaceRoot}/.vscode/chrome",
+            "userDataDir": "${workspaceRoot}",
+            "sourceMaps": true,
+            //"preLaunchTask": "chrome --remote-debugging-port=9222",
+            "smartStep": true,
+            "internalConsoleOptions": "openOnSessionStart",
+            "skipFiles": [
+                "node_modules/**"
+            ]
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/index.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/index.html"
+        }
+    ]
+}
+//"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222
+//start chrome --auto-open-devtools-for-tabs
+//Chrome DevTools — спрятанные полезности / Никита Дубко (Яндекс) - https://www.youtube.com/watch?v=TiykIPnHvmI
+//Как дебажить JavaScript. Chrome DevTools - https://www.youtube.com/watch?v=20UsCQzUOIE
+//https://www.highcharts.com/demo/highcharts/gauge-dual
